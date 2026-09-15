@@ -16,6 +16,8 @@ https://youtu.be/WexDtLkN77k
 
 # Prompts Utilizados e suas Respostas:
 
+No inicio tive um pouco de dificuldade para entender laços e saber como funcionam, e aqui vou mostrar a explicação obtida sobre o assunto através do notebook com alguns prompts e suas variações para detalhar sobre cada uma.
+
 1. Qual a diferença entre os laços de repetição For e While?
 
     A principal diferença entre os laços **`for`** e **`while`** em Python está no **controle do número de repetições** e no **cenário de uso recomendado**:
@@ -70,3 +72,85 @@ https://youtu.be/WexDtLkN77k
 * **`break`**: Interrompe e encerra a execução do laço imediatamente.
 * **`continue`**: Interrompe a iteração atual e avança para a próxima.
 * **`else`**: Pode ser adicionado ao final do laço para executar um bloco quando a repetição é concluída normalmente (sem ter sido interrompida por um `break`).
+
+# VARIAÇÕES PARA ESSA PERGUNTA:
+
+2.Pode me dar um exemplo de Loop Infinito no While?
+
+  Um **loop infinito** no laço `while` ocorre quando a condição testada permanece continuamente verdadeira, fazendo com que o programa execute o bloco de código indefinidamente.
+
+Abaixo estão os dois cenários mais comuns em que isso acontece em Python:
+
+---
+
+### 1. Condição fixa sempre verdadeira (`while True`)
+Quando o valor `True` é informado diretamente como a condição do `while`, o laço é instruído a executar para sempre, pois a condição nunca se tornará falsa.
+
+```python
+while True:
+    print("Este loop nunca vai parar!")
+```
+
+---
+
+### 2. Esquecer de atualizar a variável de controle
+Este é o caso involuntário mais comum. Ocorre quando a condição depende de uma variável (como um contador ou valor de comparação), mas o valor dessa variável **não é alterado** dentro do bloco do `while`.
+
+```python
+vendas = 100
+meta = 200
+
+# Como 'vendas' não muda dentro do laço, a condição '100 < 200' será sempre verdadeira
+while vendas < meta:
+    print("Não bateu a meta!")
+```
+
+---
+
+### Como corrigir ou controlar esse comportamento?
+* **Incrementar/Atualizar a variável:** É necessário garantir que a variável presente na condição seja modificada a cada volta (iteração) do laço até que a condição finalmente se torne falsa.
+* **Uso do `break`:** Caso seja necessário usar uma estrutura `while True` de propósito (por exemplo, para continuar pedindo dados ao usuário até que ele digite uma informação válida), utiliza-se a instrução `break` para encerrar o laço manualmente.
+
+3. Somente o a palavra True pode ser utilizada após o while já vi em outros codígos outras palavras, como isso funciona?
+
+   **Não, a palavra `True` não é a única que pode ser utilizada após o `while`.** 
+
+O laço `while` aceita qualquer **condição lógica** ou **expressão**. Ele continua executando o bloco de código repetidamente enquanto essa condição for avaliada como verdadeira. 
+
+Em programas reais, é muito comum utilizar variáveis, operadores de comparação ou operadores lógicos após o `while`:
+
+---
+
+### 1. Comparações Numéricas e Contadores
+Você pode usar variáveis numéricas acompanhadas de operadores de comparação (como `<`, `>`, `<=`, `>=`, `==`, `!=`).
+* **Contador de tentativas:** `while tentativas < 3:` faz o laço rodar enquanto a variável `tentativas` for menor que 3.
+* **Controle de horário:** `while horario <= 17:` executa enquanto a variável `horario` for menor ou igual a 17.
+
+---
+
+### 2. Validação de Textos e Senhas
+É possível verificar textos inseridos pelo usuário comparando variáveis do tipo *string*.
+* **Verificação de senha:** `while senha != '123456':` repete a solicitação enquanto a variável `senha` for diferente do texto esperado.
+* **Texto vazio:** `while nome == '':` repete o laço enquanto a variável `nome` estiver vazia.
+
+---
+
+### 3. Operações Matemáticas na Condição
+É permitido realizar cálculos na própria expressão do laço.
+* **Verificando número par:** `while numero % 2 == 0:` calcula se o resto da divisão da variável `numero` por 2 é igual a 0.
+
+---
+
+### 4. Múltiplas Condições com Operadores Lógicos (`and` / `or`)
+Você pode conectar duas ou mais comparações na mesma linha utilizando operadores como `and` ou `or`.
+* **Dupla validação:** `while usuario != 'Jonathan' and senha != '123456':` exige que tanto o usuário quanto a senha estejam incorretos para que o laço continue.
+
+---
+
+### 5. Variáveis Booleanas e Avaliação de "Valor de Verdade"
+* **Variável lógica:** você pode usar a comparação direta com uma variável que guarda um booleano, como `while acertou == False:`.
+* **Valor de verdade (*Truthy/Falsy*):** o Python não exige obrigatoriamente um objeto do tipo `bool` na condição. Valores como o número `0`, `None` e textos vazios (`""`) são avaliados como falsos, enquanto textos com conteúdo e números diferentes de zero são considerados verdadeiros.
+
+---
+
+# 
