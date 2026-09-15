@@ -153,4 +153,54 @@ Você pode conectar duas ou mais comparações na mesma linha utilizando operado
 
 ---
 
-# 
+# Resumo
+
+A estrutura e intuito do notebook é trazer de forma mais assertiva, didática e explicativa conhecimento inicial sobre logica de programação e linguagem python para diversas aplicações, conseguindo assim acessar e tirar dúvidas durante toda aprendizagem, tendo a possibilidade de criar resumos, podcast, vídeos, relatórios e testes para a fixação dos assuntos. 
+
+1. Glossário:
+
+   *Lógica de programação e Algoritmo
+   *Fundamentos python e controle de fluxo
+   *Estrutura de dados e coleções
+   *Modularização e Programação Orientada a Objetos (POO)
+   
+# Prompts reutilizáveis:
+
+5 prompts reutilizáveis baseados nos tópicos do notebook (Lógica 5Qs, Estruturas de Dados, Controle de Fluxo, Funções e POO). Você pode copiá-los e preencher os campos entre colchetes (`[...]`) sempre que quiser revisar ou praticar algum conceito.
+
+---
+
+### 1. Prompt para Praticar Lógica e Decomposição (Método 5Qs)
+> **Finalidade:** Treinar a análise de problemas antes de codificar.
+> 
+> *"Atue como um tutor de programação. Quero resolver o seguinte problema em Python: **[insira a descrição do problema ou exercício aqui]**. Aplique o Método 5Qs para decompor a solução em: 1) Análise do problema, 2) Entradas de dados, 3) Processamento e restrições, 4) Saídas esperadas e 5) Passo a passo do algoritmo em pseudocódigo. Somente após essa estrutura, apresente o código em Python."*
+
+---
+
+### 2. Prompt para Comparação e Escolha de Estruturas de Dados
+> **Finalidade:** Revisar quando usar **Listas, Tuplas, Conjuntos (`set`) ou Dicionários (`dict`)**.
+> 
+> *"Preciso armazenar e manipular as seguintes informações em um programa: **[descreva os dados, ex: lista de compras, registros de usuários com ID único, coordenadas fixas, etc.]**. Compare como esse problema seria resolvido usando **Listas**, **Tuplas**, **Conjuntos** e **Dicionários**. Explique qual é a estrutura mais adequada considerando **mutabilidade**, **unicidade** e **desempenho de busca**, e mostre o código prático para criação, consulta e modificação."*
+
+---
+
+### 3. Prompt para Diagnóstico e Análise de Controle de Fluxo (`for` vs `while`)
+> **Finalidade:** Identificar bugs, riscos de loop infinito ou escolher o laço correto.
+> 
+> *"Analise o seguinte trecho de código em Python: **[cole o código com laços ou condicionais aqui]**. Verifique se há erros de lógica, risco de **loop infinito** no `while`, ou problemas de escopo e indexação. Explique o que está errado, mostre a versão corrigida e proponha uma versão alternativa (ex: convertendo `while` para `for` com `range()` ou iteração direta, se aplicável)."*
+
+---
+
+### 4. Prompt para Modularização e Refatoração de Código (`def`)
+> **Finalidade:** Praticar a criação de funções limpas, escopo de variáveis e boas práticas.
+> 
+> *"Aqui está um script em Python que realiza uma tarefa: **[cole o script continuo/extenso aqui]**. Refatore este código dividindo-o em **funções reutilizáveis** (`def`). Garanta o uso correto de parâmetros (posicionais ou padrão), valores de retorno (`return`), separação clara entre escopo local e global, e inclua *docstrings* explicativas para cada função criada."*
+
+---
+
+### 5. Prompt para Modelagem em Programação Orientada a Objetos (POO)
+> **Finalidade:** Criar e revisar **Classes, Objetos, `__init__`, `self` e Exceções (`try/except`)**.
+> 
+> *"Crie uma estrutura Orientada a Objetos para um sistema de **[ex: Gerenciamento de Biblioteca, Controle de Estoque, Sistema Bancário]**. Modele a classe principal contendo: 1) O método construtor `__init__` e o uso de `self`, 2) Pelo menos 3 atributos relevantes, 3) Métodos para manipular esses dados e 4) Tratamento de erros com blocos `try/except` para prevenir falhas comuns durante a execução."*
+
+---
