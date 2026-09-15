@@ -159,7 +159,7 @@ A estrutura e intuito do notebook é trazer de forma mais assertiva, didática e
 
 1. Glossário:
 
-   *Lógica de programação e Algoritmo
+   *Lógica de programação e Algoritmo;
    *Fundamentos python e controle de fluxo
    *Estrutura de dados e coleções
    *Modularização e Programação Orientada a Objetos (POO)
