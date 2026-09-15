@@ -8,6 +8,7 @@ O objetivo é dominar a lógica e o básico da linguagem nesse inicio de estudos
 ## Fontes:
 Para adquirir fontes de conhecimentos ao notebooLM busquei alguns vídeos no youtube, arquivos adquiridos de um curso que realizei, e PDF obtido através de pesquisas, e através de alguns desses materiais pedi que algumas IAs verificasse se faltava mais alguma informação interessante onde pudesse está agregando conhecimento e que gerassem arquivos de apoio complementares referente ao assunto para um compreensão e aproveitamento melhor.
 Links YouTube:
+
 https://youtu.be/2uBrqwj70TQ
 
 https://youtu.be/epf-WQdVis0
